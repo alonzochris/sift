@@ -1,4 +1,4 @@
-### **Goal"**
+### **Goal**
 To build the "Google Search" for our client intelligence—a tool that is fast, powerful, and perfectly categorized, automatically guiding our advertisers' attention to what is most important.
 
 ### **Core User Experience (UX)**
