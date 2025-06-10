@@ -8,7 +8,7 @@
 
 *Focus: Get all accounts, tools, and connections established.*
 
-### **Step 1.1: Initialize the Project**
+### **Step 1.1: Initialize the Project** [ ✅ Completed ]
 
 Open your terminal and create the Next.js project.
 
@@ -27,19 +27,18 @@ Navigate into your new project:
 
 cd intelligence-hub
 
-### **Step 1.2: Install Dependencies**
-
+### **Step 1.2: Install Dependencies** [ ✅ Completed ]
 Install all the necessary database and environment variable packages.
 
 npm install drizzle-orm postgres  
 npm install \-D drizzle-kit pg dotenv
 
-### **Step 1.3: Set Up Cloud Services**
+### **Step 1.3: Set Up Cloud Services** [ ✅ Completed ]
 
 1. **Vercel:** Go to [vercel.com](https://vercel.com) and create a new, free project named intelligence-hub.  
 2. **Neon:** Go to [neon.tech](https://neon.tech) and create a new, free project. Once created, find the **Connection String** that looks like postgres://.... Copy it.
 
-### **Step 1.4: Configure Environment Variables**
+### **Step 1.4: Configure Environment Variables** [ ✅ Completed ]
 
 1. In the root of your project, create a new file named .env.local.  
 2. Add your database connection string and your Syften API token to this file.
@@ -47,7 +46,7 @@ npm install \-D drizzle-kit pg dotenv
 DATABASE\_URL="postgres://user:password@.../neondb"  
 SYFTEN\_API\_TOKEN="your\_syften\_api\_token\_here"
 
-### **Step 1.5: Configure Drizzle ORM**
+### **Step 1.5: Configure Drizzle ORM** [ ✅ Completed ]
 
 1. Create a configuration file for Drizzle. In the root of your project, create drizzle.config.ts.  
    // drizzle.config.ts  
@@ -79,11 +78,11 @@ SYFTEN\_API\_TOKEN="your\_syften\_api\_token\_here"
      matchedOn: timestamp('matched\_on').defaultNow(),  
    });
 
-### **Step 1.6: Run First Database Migration**
+### **Step 1.6: Run First Database Migration** [ ✅ Completed ]
 
 This command reads your schema and creates the alerts table in your Neon database.
 
-npx drizzle-kit push:pg
+npx drizzle-kit push
 
 *You should see a success message. Your foundation is now complete\!*
 
